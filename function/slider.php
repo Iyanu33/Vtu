@@ -1,0 +1,1 @@
+<?php  $GLOBALS["conn"] = $conn; function vt_getSliders(){ $conn = $GLOBALS["conn"]; $result = $conn->query("SELECT title,src,align,description FROM slider WHERE active='1' ORDER BY slide_order ASC"); if($result->num_rows > 0){ while($row = $result->fetch_assoc()){ $slider[] = $row;; } return $slider; }else{ return false; } }?>

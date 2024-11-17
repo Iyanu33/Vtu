@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Create an Article</title>
+        <!-- Make sure the path to CKEditor is correct. -->
+        <script src="../ckeditor.js"></script>
+    </head>
+    <body>
+        <form>
+            <textarea name="content" id="editor" rows="10" cols="80">
+     
+            </textarea>
+            
+			<input type="submit"/>
+			
+			
+			<script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'content' );
+            </script>
+        </form>
+    </body>
+</html>
